@@ -10,8 +10,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -29,5 +29,5 @@ public class Category {
 
     @Builder.Default
     @ManyToMany(mappedBy = "categories")
-    private Set<Product> products = new HashSet<>();
+    private List<Product> products = new ArrayList<>();
 }
