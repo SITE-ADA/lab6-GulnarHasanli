@@ -30,4 +30,6 @@ public class Category {
     @Builder.Default
     @ManyToMany(mappedBy = "categories")
     private List<Product> products = new ArrayList<>();
+
+
 }
